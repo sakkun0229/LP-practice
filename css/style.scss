@@ -65,7 +65,7 @@ a {
   background-color: #3F51B5;
   color: #fff;
   box-shadow: 0 4px 4px #222;
-  margin-bottom: 4px;
+  position: relative;
   &__items {
     display: flex;
   }
@@ -196,6 +196,7 @@ a {
       padding: 1.2rem 1rem;
       // box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.6);
       box-shadow: 0 2px 8px #aaa;
+      position: relative;
       flex: 1 0 300px;
       margin: 0 8px 30px 8px;
       .item-img {
@@ -224,6 +225,7 @@ a {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: 0 2px 8px #aaa;
+    position: relative;
   }
   .iframe-wrap {
     width: 100%;
@@ -260,6 +262,7 @@ box-shadow: 0 2px 8px #aaa;
     background-color: #fff;
     padding: 60px;
     box-shadow: 0 2px 8px #aaa;
+    position: relative;
     text-align: center;
     .input {
       display: flex;
