@@ -45,38 +45,109 @@ a {
   }
 }
 
-//
-
-header {
+//navbar
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
-  padding: 0 40px;
+  padding: 30px 50px;
   background-color: #3F51B5;
-  h1 {
-    color: #fff;
+  color: #fff;
+  &__items {
+    display: flex;
   }
-  nav {
-    li {
-      display: inline-block;
-      padding: 0 5px;
-      a {
-        color: #fff;
-        padding: 0 5px 5px 0;
-      }
-      a:hover {
-        opacity: 0.8;
-        border-bottom: #E81919 solid 3px;
+  &__item {
+    a {
+      color: #fff;
+      padding: 8px;
+    }
+    a:hover {
+      opacity: 0.8;
+      border-bottom: 3px solid #E81919;
+    }
+  }
+  &__burger {
+    display: none;
+    cursor: pointer;
+    div {
+      width: 25px;
+      height: 2px;
+      background-color: #fff;
+      margin: 5px;
+      transition: 0.5s;
+    }
+  }
+  &__overlay {
+    z-index: 90;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+  }
+}
+@include sp {
+  body {
+    overflow-x: hidden;
+  }
+  .navbar {
+    &__items {
+      // visibility: hidden;を有効にすると画面サイズを変えたときに一瞬出るドロワーが非表示になるが、
+      // translateX(0%) -> translateX(100%)のtransitionが無効になる
+      // visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80vw;
+      height: 100vh;
+      z-index: 100;
+      background-color: #3F51B5;
+      flex-direction: column;
+      text-align: center;
+      padding: 20vh 0;
+      box-shadow: -4px 0px 20px #000;
+      transform: translateX(105%);
+      transition: transform 0.5s ease-in-out;
+      &--active {
+        transform: translateX(0%);
+        visibility: visible;
       }
     }
-    @include sp {
-      display: none;
-    };
+    &__item {
+      margin: 30px;
+    }
+    &__burger {
+      display: block;
+      z-index: 110;
+      &--active {
+        .line1 {
+          transform: rotate(-45deg) translate(-3px, 7px);
+          // transform: rotate(-45deg);
+        }
+        .line2 {
+          opacity: 0;
+        }
+        .line3 {
+          transform: rotate(45deg) translate(-3px, -7px);
+          // position: relative;
+        }
+      }
+    }
+    &__overlay--active {
+      opacity: 0.6;
+      visibility: visible;
+    }
   }
 }
 
 
+
+
+// main
 .main-visual {
   height: 500px;
   background: url(../img/bg-image.jpg) no-repeat;
@@ -93,6 +164,9 @@ header {
   }
 }
 
+
+
+// cards
 .cards {
   background-color: #EFEFEF;
   padding: 80px 0;
@@ -126,6 +200,8 @@ header {
 }
 
 
+
+// access
 .access {
   padding: 80px 0;
   .section-title {
@@ -152,8 +228,10 @@ header {
 }
 
 
-.contact {
 
+
+// contact
+.contact {
   background-color: #EFEFEF;
   padding: 80px 0;
   .section-title {
@@ -200,6 +278,9 @@ header {
 }
 
 
+
+
+// footer
 footer {
   height: 100px;
   background-color: #333333;

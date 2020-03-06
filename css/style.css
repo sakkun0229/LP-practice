@@ -24,7 +24,7 @@ a {
   background-color: #5F71d5;
 }
 
-header {
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,33 +34,108 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
-  padding: 0 40px;
+  padding: 30px 50px;
   background-color: #3F51B5;
-}
-
-header h1 {
   color: #fff;
 }
 
-header nav li {
-  display: inline-block;
-  padding: 0 5px;
+.navbar__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-header nav li a {
+.navbar__item a {
   color: #fff;
-  padding: 0 5px 5px 0;
+  padding: 8px;
 }
 
-header nav li a:hover {
+.navbar__item a:hover {
   opacity: 0.8;
-  border-bottom: #E81919 solid 3px;
+  border-bottom: 3px solid #E81919;
+}
+
+.navbar__burger {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar__burger div {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.navbar__overlay {
+  z-index: 90;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media (max-width: 480px) {
-  header nav {
-    display: none;
+  body {
+    overflow-x: hidden;
+  }
+  .navbar__items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #3F51B5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 20vh 0;
+    -webkit-box-shadow: -4px 0px 20px #000;
+            box-shadow: -4px 0px 20px #000;
+    -webkit-transform: translateX(105%);
+            transform: translateX(105%);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .navbar__items--active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    visibility: visible;
+  }
+  .navbar__item {
+    margin: 30px;
+  }
+  .navbar__burger {
+    display: block;
+    z-index: 110;
+  }
+  .navbar__burger--active .line1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 7px);
+            transform: rotate(-45deg) translate(-3px, 7px);
+  }
+  .navbar__burger--active .line2 {
+    opacity: 0;
+  }
+  .navbar__burger--active .line3 {
+    -webkit-transform: rotate(45deg) translate(-3px, -7px);
+            transform: rotate(45deg) translate(-3px, -7px);
+  }
+  .navbar__overlay--active {
+    opacity: 0.6;
+    visibility: visible;
   }
 }
 
