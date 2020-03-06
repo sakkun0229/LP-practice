@@ -21,6 +21,10 @@ $sp: 480px;  // スマホ
 
 
 // common style
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -83,7 +87,7 @@ a {
     top: 0;
     right: 0;
     width: 100vw;
-    height: 100vh;
+    height: 1000vh;
     background-color: #000;
     opacity: 0;
     visibility: hidden;
@@ -91,9 +95,6 @@ a {
   }
 }
 @include sp {
-  body {
-    overflow-x: hidden;
-  }
   .navbar {
     &__items {
       // visibility: hidden;を有効にすると画面サイズを変えたときに一瞬出るドロワーが非表示になるが、

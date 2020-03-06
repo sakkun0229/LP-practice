@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,7 +79,7 @@ a {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 100vh;
+  height: 1000vh;
   background-color: #000;
   opacity: 0;
   visibility: hidden;
@@ -84,9 +88,6 @@ a {
 }
 
 @media (max-width: 480px) {
-  body {
-    overflow-x: hidden;
-  }
   .navbar__items {
     position: absolute;
     top: 0;
