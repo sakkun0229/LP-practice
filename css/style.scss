@@ -21,9 +21,13 @@ $sp: 480px;  // スマホ
 
 
 // common style
-body {
+html body {
   overflow-x: hidden;
 }
+
+input[type="submit"]{
+  -webkit-appearance: none;
+  }
 
 * {
   margin: 0;
