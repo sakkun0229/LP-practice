@@ -23,9 +23,9 @@ a {
   display: inline-block;
   background-color: #3F51B5;
   padding: 12px 50px;
-  border-radius: 25px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 25px;
   font-size: 1.2rem;
   color: #fff;
   cursor: pointer;
@@ -88,7 +88,7 @@ a {
   top: 0;
   right: 0;
   width: 100vw;
-  height: 200vh;
+  height: 150vh;
   background-color: #000;
   opacity: 0;
   visibility: hidden;
@@ -98,7 +98,7 @@ a {
 
 @media (max-width: 480px) {
   .navbar__items {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     width: 80vw;
