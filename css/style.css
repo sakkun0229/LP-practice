@@ -1,6 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans|Roboto&display=swap");
 html, body {
   position: relative;
   overflow-x: hidden;
+}
+
+html {
+  font-family: 'Roboto', 'Open Sans', 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
 }
 
 input[type="submit"] {

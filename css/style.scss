@@ -1,3 +1,7 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans|Roboto&display=swap');
+
+
 // media query
 $pc: 1024px; // PC
 $tab: 680px; // タブレット
@@ -24,6 +28,12 @@ $sp: 480px;  // スマホ
 html, body {
   position: relative;
   overflow-x: hidden;
+}
+
+html {
+  font-family: 'Roboto', 'Open Sans', 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
 }
 
 input[type="submit"]{
