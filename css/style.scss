@@ -64,7 +64,7 @@ a {
   padding: 30px 50px;
   background-color: #3F51B5;
   color: #fff;
-  box-shadow: 0 4px 4px #222;
+  box-shadow: 0 4px 8px #888;
   position: relative;
   &__items {
     display: flex;
@@ -165,12 +165,20 @@ a {
   .container {
     text-align: center;
     padding: 150px 30px;
-    h2 {
-      margin-bottom: 20px;
-    }
-    p {
-      margin-bottom: 50px;
-    }
+    // h2 {
+    //   margin-bottom: 20px;
+    // }
+    // p {
+    //   margin-bottom: 50px;
+    // }
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  &__text {
+    margin-bottom: 50px;
+    font-weight: bold;
   }
 }
 
@@ -224,6 +232,7 @@ a {
   .map {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 30px;
     box-shadow: 0 2px 8px #aaa;
     position: relative;
   }
@@ -239,6 +248,14 @@ a {
       height: 100%;
     }
   }
+  .container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+  }
+
 }
 
 
@@ -248,7 +265,7 @@ a {
 .contact {
   background-color: #EFEFEF;
   padding: 80px 0;
-box-shadow: 0 2px 8px #aaa;
+  box-shadow: 0 2px 8px #aaa;
   .section-title {
     text-align: center;
     font-size: 2rem;
