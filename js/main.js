@@ -18,4 +18,15 @@ const navSlide = () => {
   })
 }
 
+
+const scrolltop = document.getElementById('scrollTop')
+window.addEventListener('scroll', ()=>{
+  if (window.pageYOffset > 500) {
+    scrolltop.classList.add('scroll-top--active')
+  } else {
+    scrolltop.classList.remove('scroll-top--active')
+  }
+})
+
+
 navSlide()

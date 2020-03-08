@@ -34,7 +34,9 @@ html {
   font-family: 'Roboto', 'Open Sans', 'Noto Sans JP', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
+  scroll-behavior: smooth;
 }
+
 
 input[type="submit"]{
   -webkit-appearance: none;
@@ -112,7 +114,29 @@ a {
     visibility: hidden;
     transition: 0.5s ease-in-out;
   }
+  .scroll-top {
+    z-index: 10;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0;   //btnのpadding打ち消し
+    width: 50px;
+    height: 50px;
+    margin: 6%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
 }
+
 @include sp {
   .navbar {
     &__items {

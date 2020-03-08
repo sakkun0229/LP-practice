@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
   <title>LP practice</title>
 </head>
 <body>
 
-  <nav class="navbar">
+  <nav class="navbar" id="top">
     <div class="navbar__logo">
       <h1>LOGO</h1>
     </div>
     <ul class="navbar__items" id="navLinks">
-      <li class="navbar__item"><a href="">Link</a></li>
-      <li class="navbar__item"><a href="">Link</a></li>
-      <li class="navbar__item"><a href="">Link</a></li>
-      <li class="navbar__item"><a href="">Link</a></li>
-      <li class="navbar__item"><a href="">Link</a></li>
+      <li class="navbar__item"><a href="#top">Top</a></li>
+      <li class="navbar__item"><a href="#cards">Cards</a></li>
+      <li class="navbar__item"><a href="#access">Access</a></li>
+      <li class="navbar__item"><a href="#contact">Contact</a></li>
+      <!-- <li class="navbar__item"><a href="">Link</a></li> -->
     </ul>
     <div class="navbar__burger" id="navBurger">
       <div class="line1"></div>
@@ -25,13 +26,16 @@
       <div class="line3"></div>
     </div>
     <div class="navbar__overlay" id="navOverlay"></div>
+    <a href="#top" class="scroll-top btn" id="scrollTop">
+      <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </a>
   </nav>
 
 
   <div class="main-visual">
     <div class="container">
-      <h2 class="main-visual__title">Lorem ipsum dolor</h2>
-      <p class="main-visual__text">Consequatur eligendi porro illum nesciunt laudantium fugit ex maiores.</p>
+      <h2 class="main-visual__title">吾輩は猫である</h2>
+      <p class="main-visual__text">どこで生れたかと吾輩は猫である。んと見当がつかぬ。</p>
       <a href="#" class="btn">お問い合わせ</a>
       <!-- <a href="#"><div class="btn">お問い合わせ</div></a> -->
       <!-- <div class="btn"><a href="#">お問い合わせ</a></div> -->
@@ -39,44 +43,45 @@
   </div>
 
 
-  <div class="cards">
+  <div class="cards" id="cards">
     <h3 class="section-title">Cards</h3>
     <div class="flex-container">
       <div class="flex-item">
         <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>hoge</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde odit eum qui delectus laborum est libero ea exercitationem. A dolorum incidunt</p>
+        <h4>記事タイトル</h4>
+        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
       </div>
       <div class="flex-item">
         <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>hoge</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde odit eum qui delectus laborum est libero ea exercitationem. A dolorum incidunt</p>
+        <h4>記事タイトル</h4>
+        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
       </div>
       <div class="flex-item">
         <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>hoge</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde odit eum qui delectus laborum est libero ea exercitationem. A dolorum incidunt</p>
+        <h4>記事タイトル</h4>
+        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
       </div>
       <div class="flex-item">
         <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>hoge</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde odit eum qui delectus laborum est libero ea exercitationem. A dolorum incidunt</p>
+        <h4>記事タイトル</h4>
+        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
       </div>
       <div class="flex-item">
         <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>hoge</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde odit eum qui delectus laborum est libero ea exercitationem. A dolorum incidunt</p>
+        <h4>記事タイトル</h4>
+        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
       </div>
       <div class="flex-item">
         <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>hoge</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde odit eum qui delectus laborum est libero ea exercitationem. A dolorum incidunt</p>
+        <h4>記事タイトル</h4>
+        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
       </div>
+
     </div>
   </div>
 
 
-  <div class="access">
+  <div class="access" id="access">
     <h3 class="section-title">Access</h3>
     <div class="map">
       <div class="iframe-wrap">
@@ -92,7 +97,7 @@
   </div>
 
 
-  <div class="contact">
+  <div class="contact" id="contact">
     <h3 class="section-title">Contact</h3>
     <form action="#">
       <div class="input">

@@ -8,6 +8,7 @@ html {
   font-family: 'Roboto', 'Open Sans', 'Noto Sans JP', sans-serif;
   font-size: 16px;
   word-spacing: 1px;
+  scroll-behavior: smooth;
 }
 
 input[type="submit"] {
@@ -104,6 +105,36 @@ a {
   visibility: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+.navbar .scroll-top {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  margin: 6%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 8px #444;
+          box-shadow: 0 2px 8px #444;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.navbar .scroll-top--active {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media (max-width: 480px) {
