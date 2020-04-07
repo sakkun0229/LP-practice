@@ -1,128 +1,146 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css">
-  <title>LP practice</title>
-</head>
-<body>
-
-  <nav class="navbar" id="top">
-    <div class="navbar__logo">
-      <h1>LOGO</h1>
-    </div>
-    <ul class="navbar__items" id="navLinks">
-      <li class="navbar__item"><a href="#top">Top</a></li>
-      <li class="navbar__item"><a href="#cards">Cards</a></li>
-      <li class="navbar__item"><a href="#access">Access</a></li>
-      <li class="navbar__item"><a href="#contact">Contact</a></li>
-      <!-- <li class="navbar__item"><a href="">Link</a></li> -->
-    </ul>
-    <div class="navbar__burger" id="navBurger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-    <div class="navbar__overlay" id="navOverlay"></div>
-    <a href="#top" class="scroll-top btn" id="scrollTop">
-      <i class="fa fa-chevron-up" aria-hidden="true"></i>
-    </a>
-  </nav>
-
-
-  <div class="main-visual">
-    <div class="container">
-      <h2 class="main-visual__title">吾輩は猫である</h2>
-      <p class="main-visual__text">どこで生れたかと吾輩は猫である。んと見当がつかぬ。</p>
-      <a href="#contact" class="btn">お問い合わせ</a>
-      <!-- <a href="#"><div class="btn">お問い合わせ</div></a> -->
-      <!-- <div class="btn"><a href="#">お問い合わせ</a></div> -->
-    </div>
-  </div>
-
-
-  <div class="cards" id="cards">
-    <h3 class="section-title">Cards</h3>
-    <div class="flex-container">
-      <div class="flex-item">
-        <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>記事タイトル</h4>
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>LP practice</title>
+  </head>
+  <body>
+    <nav class="navbar" id="top">
+      <div class="navbar__logo">
+        <h1>LOGO</h1>
       </div>
-      <div class="flex-item">
-        <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>記事タイトル</h4>
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
+      <ul class="navbar__items" id="navLinks">
+        <li class="navbar__item"><a href="#top">Top</a></li>
+        <li class="navbar__item"><a href="#cards">Cards</a></li>
+        <li class="navbar__item"><a href="#access">Access</a></li>
+        <li class="navbar__item"><a href="#contact">Contact</a></li>
+        <!-- <li class="navbar__item"><a href="">Link</a></li> -->
+      </ul>
+      <div class="navbar__burger" id="navBurger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
       </div>
-      <div class="flex-item">
-        <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>記事タイトル</h4>
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
-      </div>
-      <div class="flex-item">
-        <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>記事タイトル</h4>
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
-      </div>
-      <div class="flex-item">
-        <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>記事タイトル</h4>
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
-      </div>
-      <div class="flex-item">
-        <img src="img/card-image.jpg" alt="card-img" class="item-img">
-        <h4>記事タイトル</h4>
-        <p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。</p>
-      </div>
+      <div class="navbar__overlay" id="navOverlay"></div>
+      <a href="#top" class="scroll-top btn" id="scrollTop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+      </a>
+    </nav>
 
-    </div>
-  </div>
-
-
-  <div class="access" id="access">
-    <h3 class="section-title">Access</h3>
-    <div class="map">
-      <div class="iframe-wrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9050.885590956013!2d139.77327936563162!3d35.68454371930127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1582559625953!5m2!1sja!2sjp" width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    <div class="main-visual">
+      <div class="container">
+        <h2 class="main-visual__title">吾輩は猫である</h2>
+        <p class="main-visual__text">
+          どこで生れたかと吾輩は猫である。んと見当がつかぬ。
+        </p>
+        <a href="#contact" class="btn">お問い合わせ</a>
+        <!-- <a href="#"><div class="btn">お問い合わせ</div></a> -->
+        <!-- <div class="btn"><a href="#">お問い合わせ</a></div> -->
       </div>
     </div>
-    <div class="container">
-      <p>
-        住所：〒100-0005 東京都千代田区丸の内１丁目<br>
-        JR有楽町駅から徒歩10分
-      </p>
+
+    <div class="cards" id="cards">
+      <h3 class="section-title">Cards</h3>
+      <div class="flex-container">
+        <div class="flex-item">
+          <img src="img/card-image.jpg" alt="card-img" class="item-img" />
+          <h4>記事タイトル</h4>
+          <p>
+            吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          </p>
+        </div>
+        <div class="flex-item">
+          <img src="img/card-image.jpg" alt="card-img" class="item-img" />
+          <h4>記事タイトル</h4>
+          <p>
+            吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          </p>
+        </div>
+        <div class="flex-item">
+          <img src="img/card-image.jpg" alt="card-img" class="item-img" />
+          <h4>記事タイトル</h4>
+          <p>
+            吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          </p>
+        </div>
+        <div class="flex-item">
+          <img src="img/card-image.jpg" alt="card-img" class="item-img" />
+          <h4>記事タイトル</h4>
+          <p>
+            吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          </p>
+        </div>
+        <div class="flex-item">
+          <img src="img/card-image.jpg" alt="card-img" class="item-img" />
+          <h4>記事タイトル</h4>
+          <p>
+            吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          </p>
+        </div>
+        <div class="flex-item">
+          <img src="img/card-image.jpg" alt="card-img" class="item-img" />
+          <h4>記事タイトル</h4>
+          <p>
+            吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
 
-
-  <div class="contact" id="contact">
-    <h3 class="section-title">Contact</h3>
-    <form action="#">
-      <div class="input">
-        <label for="name">お名前</label>
-        <input type="text" name="name">
+    <div class="access" id="access">
+      <h3 class="section-title">Access</h3>
+      <div class="map">
+        <div class="iframe-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9050.885590956013!2d139.77327936563162!3d35.68454371930127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1582559625953!5m2!1sja!2sjp"
+            width="100%"
+            height="auto"
+            frameborder="0"
+            style="border: 0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
       </div>
-      <div class="input">
-        <label for="email">メールアドレス</label>
-        <input type="email" name="email">
+      <div class="container">
+        <p>
+          住所：〒100-0005 東京都千代田区丸の内１丁目<br />
+          JR有楽町駅から徒歩10分
+        </p>
       </div>
-      <div class="input">
-        <label for="msg">お問い合わせ内容</label>
-        <textarea name="msg" id="" cols="30" rows="10"></textarea>
-      </div>
-      <!-- <p>このフォームは裏の処理を作っていないため動きません</p> -->
-      <input type="submit" value="送信" class="btn">
-    </form>
-  </div>
+    </div>
 
+    <div class="contact" id="contact">
+      <h3 class="section-title">Contact</h3>
+      <form action="#">
+        <div class="input">
+          <label for="name">お名前</label>
+          <input type="text" name="name" />
+        </div>
+        <div class="input">
+          <label for="email">メールアドレス</label>
+          <input type="email" name="email" />
+        </div>
+        <div class="input">
+          <label for="msg">お問い合わせ内容</label>
+          <textarea name="msg" id="" cols="30" rows="10"></textarea>
+        </div>
+        <!-- <p>このフォームは裏の処理を作っていないため動きません</p> -->
+        <input type="submit" value="送信" class="btn" />
+      </form>
+    </div>
 
+    <footer>
+      <p>&COPY; 2020 takahisa sakuma</p>
+    </footer>
 
-  <footer>
-    <p>&COPY; 2020 takahisa sakuma</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

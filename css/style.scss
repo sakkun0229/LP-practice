@@ -1,11 +1,10 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP|Open+Sans|Roboto&display=swap');
 
-
 // media query
 $pc: 1024px; // PC
 $tab: 680px; // タブレット
-$sp: 480px;  // スマホ
+$sp: 480px; // スマホ
 @mixin pc {
   @media (max-width: ($pc)) {
     @content;
@@ -23,9 +22,9 @@ $sp: 480px;  // スマホ
 }
 //
 
-
 // common style
-html, body {
+html,
+body {
   position: relative;
   overflow-x: hidden;
 }
@@ -36,13 +35,12 @@ html {
   word-spacing: 1px;
   scroll-behavior: smooth;
   overscroll-behavior-y: contain;
-  -webkit-overflow-scrolling: touch
+  -webkit-overflow-scrolling: touch;
 }
 
-
-input[type="submit"]{
+input[type='submit'] {
   -webkit-appearance: none;
-  }
+}
 
 * {
   margin: 0;
@@ -57,7 +55,7 @@ a {
 
 .btn {
   display: inline-block;
-  background-color: #3F51B5;
+  background-color: #3f51b5;
   padding: 12px 50px;
   box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.4);
   border-radius: 25px;
@@ -66,7 +64,7 @@ a {
   cursor: pointer;
   transition: 0.2s;
   &:hover {
-    background-color: #5F71d5;
+    background-color: #5f71d5;
   }
 }
 
@@ -76,7 +74,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 30px 50px;
-  background-color: #3F51B5;
+  background-color: #3f51b5;
   color: #fff;
   box-shadow: 0 4px 8px #888;
   position: relative;
@@ -90,7 +88,7 @@ a {
     }
     a:hover {
       opacity: 0.8;
-      border-bottom: 3px solid #E81919;
+      border-bottom: 3px solid #e81919;
     }
   }
   &__burger {
@@ -121,7 +119,7 @@ a {
     position: fixed;
     bottom: 0;
     right: 0;
-    padding: 0;   //btnのpadding打ち消し
+    padding: 0; //btnのpadding打ち消し
     width: 50px;
     height: 50px;
     margin: 6%;
@@ -151,7 +149,7 @@ a {
       width: 80vw;
       height: 100vh;
       z-index: 100;
-      background-color: #3F51B5;
+      background-color: #3f51b5;
       flex-direction: column;
       text-align: center;
       padding: 20vh 0;
@@ -190,9 +188,6 @@ a {
   }
 }
 
-
-
-
 // main
 .main-visual {
   height: 500px;
@@ -218,11 +213,9 @@ a {
   }
 }
 
-
-
 // cards
 .cards {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 80px 0;
   .section-title {
     text-align: center;
@@ -254,8 +247,6 @@ a {
     }
   }
 }
-
-
 
 // access
 .access {
@@ -291,15 +282,11 @@ a {
     text-align: center;
     line-height: 40px;
   }
-
 }
-
-
-
 
 // contact
 .contact {
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 80px 0;
   box-shadow: 0 2px 8px #aaa;
   .section-title {
@@ -323,7 +310,7 @@ a {
       text-align: left;
       @include sp {
         flex-direction: column;
-      };
+      }
       label {
         // flex: 1 0 180px;
         flex: 1;
@@ -346,9 +333,6 @@ a {
     }
   }
 }
-
-
-
 
 // footer
 footer {
